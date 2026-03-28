@@ -13,9 +13,4 @@ services:
     volumes:
       - ./config:/config
       - /lib/modules:/lib/modules:ro
-    entrypoint: /bin/bash
-    command: >
-      -c "envsubst < /config/wg0.conf.template > /config/wg0.conf && exec /init"
-    env_file:
-      - .env
     restart: unless-stopped
