@@ -1,5 +1,5 @@
 [Interface]
-Address = 10.0.0.2/24
+Address = 10.0.0.2/32
 PrivateKey = ${HOME_SERVER_PRIVATE_KEY}
 
 [Peer]
